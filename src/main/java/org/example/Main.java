@@ -11,7 +11,7 @@ public class Main {
         checkHashTable();
     }
     public static void checkHashTable() {
-        Random random = new Random();
+        Random random = new Random()
         int size = 10000;
         MyHashTable<MyTestingClass, Student> table = new MyHashTable<>(size);
         for (int i = 0; i < size; i++) {
