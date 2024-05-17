@@ -131,20 +131,3 @@ public class BST<K extends Comparable<K>, V> {
         }
     }
 }
-            if (current.left == null)
-                return current.right;
-
-            if (current.right == null)
-                return current.left;
-
-            int smallestValue = findSmallestValue(current.left);
-            current.data =smallestValue;
-            current.left = remove(current.left, smallestValue);
-        }
-        return current;
-    }
-
-    private int findSmallestValue(Node node) {
-        return node.right == null ? node.data : findSmallestValue(node.right);
-    }
-}
