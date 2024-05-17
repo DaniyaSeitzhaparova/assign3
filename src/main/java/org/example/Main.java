@@ -24,7 +24,7 @@ public class Main {
             MyTestingClass test = new MyTestingClass(String.valueOf(i), String.valueOf(i));
             if (table.get(test) == null) {
                 qw++;
-                System.out.println("Value is not found: " + test);
+                System.out.println("Value is not found: " + test);//
             }
         }
         System.out.println(qw);
